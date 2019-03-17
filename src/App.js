@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function sayHi(){
+  alert('Hi')
+}
 class App extends Component {
   render() {
     return (
@@ -18,6 +21,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+            <button onClick={function(){alert(1)}}>点我</button>
           </a>
         </header>
       </div>
